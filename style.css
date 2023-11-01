@@ -1,0 +1,135 @@
+/* Reset some default browser styles */
+body {
+  margin: 0;
+  padding: 0;
+  /* padding: 20px; */
+  list-style: none;
+  background-color: #f4ffe6;
+}
+
+.small {
+  width: 15px;
+  height: 15px;
+  color: white;
+}
+.imgbody {
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid #4b8df8;
+  border-radius: 5px;
+  
+}
+@media (max-width: 1100px) {
+  .imgbody {
+    overflow: scroll;
+  }
+}
+
+.imgbody .bodyHead {
+  width: 100%;
+  background-color: #4b8df8;
+  padding: 10px 0px;
+  color: white;
+  display: flex;
+align-items: center;
+justify-content: start;
+  flex-direction: row;
+}
+
+.bodyHead img {
+    padding: 0rem 0.2rem !important;
+  max-width: 24px;
+  height: 23px;
+  padding-top: 3px;
+  margin-right: 3px;
+}
+
+.imgbody img {
+  padding: 3rem 2rem;
+  width: 760px;
+  z-index: 0;
+}
+
+.imgbody button {
+  padding: 11px 9px;
+  background-color: #4b8df8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 0.7rem;
+}
+
+.imgbody button:hover {
+  background-color: #3674d8;
+}
+
+/* Style the header and footer body header #4B8DF8*/
+header {
+  background: #683091;
+  border-bottom: 1px solid #e9ecf3;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  margin-left: 1.1rem;
+}
+
+header .logoRight {
+  margin-right: 1rem;
+  padding-bottom: 1.2rem;
+}
+
+/* Style the logos in the header and footer */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  /* width: 50px;  */
+  /* height: 50px; */
+  margin-right: 10px;
+}
+
+/* Style the main content area */
+main {
+  padding: 20px;
+}
+
+footer {
+  padding: 0px 20px;
+  font-size: 13px;
+  height: 33px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #8dc641;
+}
+
+footer .fleft {
+  color: #592e80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+footer .fleft img {
+  margin-right: 5px;
+}
+footer .fright {
+  color: #592e80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+footer .fright img {
+  margin-left: 5px;
+  height: 25px;
+}
