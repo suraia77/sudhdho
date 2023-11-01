@@ -5,7 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="bd.png" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>ভূমি উন্নয়ন কর পরিশোধ রসিদ</title>
+
+    <style>
+      @media print {
+        .print-title {
+          display: none;
+        }
+        body * {
+          visibility: hidden;
+        }
+        .imgbody * {
+          visibility: visible;
+        }
+        .imgbody {
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+        .bodyHead * {
+          visibility: hidden;
+        }
+        .imgbody img:not(#printImage) {
+          display: none;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -20,10 +44,10 @@
     <main>
       <div class="imgbody">
         <div class="bodyHead">
-            <img src="blob.png" alt="Left Logo" />
-            <div>ভূমি উন্নয়ন কর পরিশোধ রসিদ</div>
+          <img src="blob.png" alt="Left Logo" />
+          <div class="print-title">ভূমি উন্নয়ন কর পরিশোধ রসিদ</div>
         </div>
-        <img src="main.jpg" alt="Right Logo" />
+        <img id="printImage" src="main.jpg" alt="Right Logo" />
         <button onclick="window.print()">প্রিন্ট</button>
       </div>
     </main>
@@ -31,7 +55,7 @@
     <footer>
       <div class="fleft">
         <img src="bd.png" alt="Left Logo" />
-        ভূমি সংস্কার বোর্ড, ভূমি মন্ত্রণালয়, গণপ্রজাতন্ত্রী বাংলাদেশ সরকার
+        ভূমি সংস্কার বোর্ড, ভূমি মন্ত্নালয়, গণপ্রজাতন্ত্রী বাংলাদেশ সরকার
       </div>
       <div class="fright">
         কারিগরি সহায়তায়
